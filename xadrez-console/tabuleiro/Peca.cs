@@ -7,12 +7,11 @@
         public int qteMoviemntos { get; protected set; }
         public Tabuleiro tab { get; protected set; }
 
-        public Peca(Posicao posicao, Cor cor, int qteMoviemntos, Tabuleiro tab)
+        public Peca(Tabuleiro tab, Cor cor)
         {
-            this.posicao = posicao;
-            this.cor = cor;
-            this.qteMoviemntos = qteMoviemntos;
+            this.posicao = null;
             this.tab = tab;
+            this.cor = cor;
             this.qteMoviemntos = 0;
         }
 
